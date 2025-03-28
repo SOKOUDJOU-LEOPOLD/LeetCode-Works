@@ -34,6 +34,7 @@ class Solution:
             union(a, b)
 
         # Step 2: Group connected components
+        # list of values in groups are in sorted order
         groups = defaultdict(list)
         for i in range(n):
             groups[find(i)].append(i)
@@ -42,7 +43,7 @@ class Solution:
         res = list(s)
         for indices in groups.values():
             chars = sorted(res[i] for i in indices)  # Extract and sort characters
-            for i, char in zip(sorted(indices), chars):
+            for i, char in zip(indices, chars):
                 res[i] = char  # Place sorted characters in correct positions
 
         return "".join(res)
