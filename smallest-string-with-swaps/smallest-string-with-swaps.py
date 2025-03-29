@@ -1,7 +1,7 @@
 from collections import defaultdict
 from typing import List
 '''
-Union Find: Union by Rank 
+Union Find: Union by Rank with path compression
 
 '''
 class Solution:
