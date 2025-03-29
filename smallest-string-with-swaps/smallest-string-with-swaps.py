@@ -27,7 +27,7 @@ class Solution:
                     parent[rootX] = rootY
                 else:
                     parent[rootY] = rootX
-                    rank[rootX] += 1
+                    rank[rootY] += 1
 
         # Step 1: Connect components
         for a, b in pairs:
