@@ -1,3 +1,6 @@
+// TC: O(n)
+// SC: O(n)+O(2) = O(n);
+
 class Solution {
     private int size = 2;
     public int[] twoSum(int[] nums, int target) {
@@ -16,6 +19,7 @@ class Solution {
         
     }
 }
+
 
 
 
