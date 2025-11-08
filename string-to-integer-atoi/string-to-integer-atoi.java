@@ -14,7 +14,7 @@ class Solution {
             i++;
         }
         
-        // biuding the integer
+        // biulding the integer
         long num = 0;
         while(i<n && Character.isDigit(s.charAt(i))){
             num = num*10 + (s.charAt(i)-'0');
@@ -25,7 +25,6 @@ class Solution {
             
             i++;
         }
-        return (int)(num*sign);
-        
+        return (int)(num*sign);        
     }
 }
