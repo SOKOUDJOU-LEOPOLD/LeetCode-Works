@@ -6,6 +6,7 @@ class Solution {
         while(i<n && s.charAt(i) == ' '){
             i++;
         }
+        
         // getting the new char or the sign
         boolean firstChar = false;
         int sign = 1;
@@ -37,9 +38,7 @@ class Solution {
         }
         
         System.out.println("ki");
-        // if(sign == -1){
-        //     return sign*(int)num;
-        // }
+        
         return (int)(num*sign);
         
     }
