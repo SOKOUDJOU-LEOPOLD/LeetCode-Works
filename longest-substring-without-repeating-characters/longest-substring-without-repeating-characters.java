@@ -13,7 +13,7 @@ class Solution {
         int len  = 0;
         while(r<n){
             if(set.contains(s.charAt(r))){
-                len = Math.max(len, set.size());
+                // len = Math.max(len, set.size());
                 while(set.contains(s.charAt(r))){
                     set.remove(s.charAt(l));
                     l++;
@@ -21,12 +21,13 @@ class Solution {
                 set.add(s.charAt(r));
             }else{
                 set.add(s.charAt(r));
-                System.out.println(s.charAt(r));
+                // System.out.println(s.charAt(r));
+                len = Math.max(len, r-l+1);
             }
             r++;
         }
         
-        len = Math.max(len, set.size());
+        // len = Math.max(len, set.size());
         
         return len;
         
