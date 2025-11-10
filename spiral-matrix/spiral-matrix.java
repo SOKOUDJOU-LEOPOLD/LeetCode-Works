@@ -10,7 +10,7 @@ class Solution {
         int i=0, j=0;
         while(true){
             
-            // check if next step in set
+            // check if next step is impossible 
             if(i>= n || j >= m || i<0 || j<0 || set.contains(Arrays.asList(i, j))){
                 break;
             }
