@@ -18,18 +18,15 @@ class Solution {
     }
     
     public boolean dfs(int i, int j, String word, int index){
-        // System.out.println(word.charAt(index));
         if(index == word.length()-1){
             return true;
         }
         
         for(int k = 0; k < dir.length; k++){
-            // System.out.println("leo");
             int x = i+dir[k][0];
             int y = j+dir[k][1];
             if(x>-1 && y>-1 && x<bd.length && y<bd[0].length && bd[x][y] == word.charAt(index+1)){
                 if(!seen.contains(x+"-"+y)){
-                    // System.out.println("eater");
                     seen.add(x+"-"+y);
                     if(dfs(x, y, word, index+1)){
                         return true;
