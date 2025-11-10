@@ -25,7 +25,7 @@ class Solution {
             char ch = s.charAt(right);
             win.put(ch, win.getOrDefault(ch, 0)+1);
             // increment counter
-            if(map.containsKey(ch) && win.get(ch).intValue() == map.get(ch).intValue()){
+            if(map.containsKey(ch) && (int)win.get(ch) == (int)map.get(ch)){
                 counter ++;
             }
                 
@@ -38,7 +38,7 @@ class Solution {
                     
                 char cha = s.charAt(left);
                 win.put(cha, win.get(cha)-1);
-                if(map.containsKey(cha) && (int)win.get(cha) < map.get(cha).intValue()){
+                if(map.containsKey(cha) && (int)win.get(cha) < (int)map.get(cha)){
                     counter --;
                 }
                 left++;                        
