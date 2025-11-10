@@ -31,7 +31,6 @@ class Solution {
                 
             while(counter == required){
                 // check if we have new minimum values
-                System.out.println("ddddddddddd");
                 if(minLen> right-left+1){
                     minLen = right-left+1;
                     startIndex = left;
@@ -39,7 +38,7 @@ class Solution {
                     
                 char cha = s.charAt(left);
                 win.put(cha, win.get(cha)-1);
-                if(map.containsKey(cha) && win.get(cha).intValue()<map.get(cha).intValue()){
+                if(map.containsKey(cha) && (int)win.get(cha) < map.get(cha).intValue()){
                     counter --;
                 }
                 left++;                        
@@ -49,7 +48,6 @@ class Solution {
         }
         
         if(minLen == Integer.MAX_VALUE){
-            System.out.println("dsd");
             return "";
         }
         return s.substring(startIndex, startIndex+minLen);
