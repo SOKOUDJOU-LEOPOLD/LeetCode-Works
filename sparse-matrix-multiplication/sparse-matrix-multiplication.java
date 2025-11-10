@@ -7,6 +7,7 @@ class Solution {
         int[][] res = new int[m][n];
         for(int i =0; i<m; i++){
             for(int j=0; j<n; j++){
+                
                 res[i][j] = 0;
                 for(int t =0; t<k; t++){
                     res[i][j] += mat1[i][t]*mat2[t][j]; 
