@@ -13,10 +13,10 @@ class Solution {
             
         }
         
-        for(int i: set){
-            res.add(i);
-        }
-        
+        // for(int i: set){
+        //     res.add(i);
+        // }
+        res.addAll(set);
         return res;
         
     }
