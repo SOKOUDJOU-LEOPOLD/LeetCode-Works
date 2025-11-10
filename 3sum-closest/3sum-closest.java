@@ -23,10 +23,7 @@ class Solution {
                 if(min_diff >= Math.abs(sum-target)){
                     min_diff = Math.abs(sum-target);
                     min_sum = sum;
-                    // System.out.println(min_sum);
-                }// }else{
-                //     break;
-                // }
+                }
             }
             
         }
