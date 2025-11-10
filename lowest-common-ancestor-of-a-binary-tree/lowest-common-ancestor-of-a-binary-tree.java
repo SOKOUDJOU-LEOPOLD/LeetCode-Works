@@ -9,23 +9,23 @@
  */
 class Solution {
     
-    public boolean find(TreeNode node, TreeNode root, ArrayList<TreeNode> path){
+    public ArrayList<TreeNode> find(TreeNode node, TreeNode root, ArrayList<TreeNode> path){
         if(root == null){
-            return false;
+            return null;
         }
         
         path.add(root);
-        // System.out.println(root.val);
+        
         if(root == node){
-            return true;
+            return path;
         }
         
-        if(find(node, root.left, path) || find(node, root.right, path)){
-            return true;
+        if(find(node, root.left, path) != null || find(node, root.right, path) != null){
+            return path;
         }
         
         path.remove(root);
-        return false;
+        return null;
     }
     
     ArrayList<TreeNode> pathP = new ArrayList<>();
