@@ -17,7 +17,7 @@ class Solution {
         }
         
         int[] res = new int[n];
-        //final 
+        // final steps 
         for(int i=0; i<n; i++){
             res[i] = before[i]*after[i];
         }
