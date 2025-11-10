@@ -41,6 +41,8 @@ class Solution {
 
 /*
 
+Idea: Traversal + Two Pointer Approach
+
 {-1,0,1}   
   
 */
