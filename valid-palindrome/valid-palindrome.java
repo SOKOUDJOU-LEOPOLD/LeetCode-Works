@@ -19,3 +19,7 @@ class Solution {
         return true;
     }
 }
+
+/*
+Two pointer approach: left and right 
+*/
