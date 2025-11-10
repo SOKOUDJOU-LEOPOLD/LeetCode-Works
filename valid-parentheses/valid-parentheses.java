@@ -31,24 +31,6 @@ public class Solution {
         
         return stack.isEmpty();
 
-//         for (char ch : s.toCharArray()) {
-//             // If it's an opening bracket, push the corresponding closing bracket
-//             if (ch == '(') {
-//                 stack.push(')');
-//             } else if (ch == '{') {
-//                 stack.push('}');
-//             } else if (ch == '[') {
-//                 stack.push(']');
-//             } else {
-//                 // If it's a closing bracket, check if it matches the top of the stack
-//                 if (stack.isEmpty() || stack.pop() != ch) {
-//                     return false;
-//                 }
-//             }
-//         }
-
-//         // All brackets should be closed
-//         return stack.isEmpty();
     }
 
 }
