@@ -38,6 +38,7 @@ class Solution {
         
     }
 
+// using a String builder
 //     private void dfs(int index, String digits, StringBuilder current, List<String> res, Map<Character, String> dicto) {
 //         // Base case
 //         if (current.length() == digits.length()) {
