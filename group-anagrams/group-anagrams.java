@@ -3,23 +3,18 @@ import java.util.*;
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         // Use a hashmap to group by sorted string
-        Map<String, List<String>> map = new HashMap<>();
-
-        for (String str : strs) {
-            // Convert string to character array and sort
-            char[] chars = str.toCharArray();
-            Arrays.sort(chars);
-            String key = new String(chars);
-
-            // Add to the hashmap
-            if (!map.containsKey(key)) {
+        HashMap<String, List<String>> map = new HashMap<>();
+        int n = strs.length;
+        for(int i=0; i<n; i++){
+            char[] charr = strs[i].toCharArray();
+            Arrays.sort(charr);
+            String key = new String(charr);
+            if(!map.containsKey(key)){
                 map.put(key, new ArrayList<>());
             }
-            map.get(key).add(str);
+            map.get(key).add(strs[i]);
         }
-
-        // Return the grouped anagrams
-        // return new ArrayList<>(map.values());
+        
         return new ArrayList<>(map.values());
     }
 }
