@@ -25,10 +25,10 @@ class Solution {
         
         int left = dfs(root.left);
         int right = dfs(root.right);
-        max = Math.max(max, left+right);
-        
+        // sum diameter and get max
+        max = Math.max(max, left + right);
+        // return the max depth
         return Math.max(left, right)+1;
-        
         
     }
 }
